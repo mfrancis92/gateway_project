@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1{
+	text-align: center;
+	margin: auto 0;
+}
+
+p {
+	color: #444;
+}
+
+.sitelogo {
+	width: 50%; 
+	height: 150px;
+	background-size: contain; 
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	margin-left: 200px;
+}
+
+.sitelogo a:hover {
+	background-color: #fff;
+}
+
+
+nav {
+    width: 100%;
+    height: 60px;
+	background-color: #000;
+	text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    line-height: 4%;
+	
+
+}
+
+nav ul li {
+	float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    letter-spacing: .3em;
+    color: #fff;
+    font-size: 25px;
+    padding: 22px 14px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color:#444;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    padding:10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+nav ul li:hover ul {
+    display: block;
+    
+}
+
+nav ul li ul li {
+    width: 180px;
+    border-radius: 4px;
+}
+
+nav ul li ul li a {
+    padding: 20px 20px;
+}
+
+nav ul li ul li a:hover {
+	background-color: #444;
+}
+
+.socialMedia ul {
+	margin: 0 auto;
+	padding: 0
+}
+.socialMedia li {
+	display: inline;
+}
+
+.socialMedia img {
+    width: 4%;
+}
+
+.facebook, twitter {
+    padding-bottom: .6px;
+}
+
+footer, footer p {
+    color: #7E737F;
+	text-align: center;
+	margin: 10px;
+	clear: both;
+}
+
+/* -------COLLECTIONS PAGES------- */
+
+.products {
+    margin: 0 auto; 
+}
+
+.price {
+    font-weight: bold;
+    margin: 1px;
+}
+
+.p_card1 {
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+    width: 33%;
+}
+
+.p_card1 img:hover,
+.p_card2 img:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.p_card1 img {
+    width: 60%;
+    height: 200px;
+}
+
+.p_card2 {
+
+    padding: 10px; 
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+}
+
+
+
+.p_card2 img {
+    width: 65%;
+    height: 250px;
+}
+
+/* ------CHECKOUT PAGE------ */
+.p_pic1 {
+    border-radius: 2px;
+    width: 45%;
+    margin: 10px;
+    padding: 50px;
+    border: 1px solid #000;
+    float: left;
+}
+
+.description {
+    border-radius: 2px;
+    width: 45%;
+    margin: 10px;
+    padding: 4px;
+    border: 1px solid #000;
+    float: right;
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    width: 45%;
+    margin: 10px 0 0 30%;
+    padding: 5px;
+}
+
+.description button {
+    float: right;
+    clear: both;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* ------ABOUT PAGE------ */
+
+.profile img {
+    border-radius: 80%;
+    margin: 20px;
+    width: 300px;
+    float: left;
+}
+
+.profile p {
+    border-radius: 4px;
+    padding: 30px;
+    line-height: 1.5em;
+    background-color: #000;
+    color: #bbb;
+    margin: 50px;
+    font-size: 24px;
+}
+
+/* -------CONTACT PAGE------- */
+
+.contact {
+    
+	margin-top: 110px;
+	text-align: center;
+}
+
+.contact h1 {
+	margin: 0 0 20px;
+}
+
+.contact p {
+	margin: 0 0 5px;
+}
+
+.contact-box {
+	text-align: center;
+}
+
+input, 
+textarea {
+	border-radius: 4px;
+	border: 1px solid #bbb;
+}
+
+.contact-box input {
+    margin-bottom: 10px; 
+}
+
+
+.contact-box button {
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    width: 70px;
+    height: 30px;
+    border: none;
+    text-transform: uppercase;
+}
+/* -------MOBILE VIEW------- */
+
+@media screen and (min-width: 150px) and (max-width: 750px) {
+
+    .sitelogo {
+        margin: 0 auto;
+        width: 75%;
+        height: 30%;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .p_card1 {
+        width: 85%;
+        height: 50%;
+    }
+
+    .p_card2 {
+        width: 80%;
+    }
+
+    .profile img {
+        width: 150px;
+    }
+
+    .profile p {
+        font-size: 14px;
+    }
+
+    .contact {
+        margin: 0 auto;
+    }
+
+    .socialMedia img {
+        width: 10%;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+
+    .sitelogo {
+        margin: 0 auto;
+        width: 75%;
+        height: 30%;
+    }
+
+  
+    nav {
+        width: 100%;
+        height: 40px;
+    }
+
+    .p_card1 {
+        width: 43%;
+        height: 50%;
+    }
+
+    .p_card2 {
+        width: 46%;
+    }
+
+    .profile img {
+        width: 200px;
+    }
+
+    .profile p {
+        font-size: 18px;
+    }
+
+    .socialMedia img {
+        width: 5%;
+    }
+}
